@@ -1,0 +1,71 @@
+root = true
+
+# C# files
+[*.cs]
+
+# Enforce namespace and using directive cleanup
+dotnet_diagnostic.IDE0130.severity = error # Namespace must match folder structure and file name
+dotnet_diagnostic.CS8019.severity = error # Remove unnecessary using directives
+
+# Rules for unused code (classes, methods, parameters, etc.)
+dotnet_diagnostic.CA1801.severity = error # Review unused parameters
+dotnet_diagnostic.CA1804.severity = error # Remove unused locals
+dotnet_diagnostic.CA1811.severity = error # Avoid uncalled private code
+dotnet_diagnostic.CA1823.severity = error # Avoid unused private fields
+
+# Code Style and Readability
+dotnet_diagnostic.IDE0055.severity = error # Enforce consistent code formatting
+dotnet_diagnostic.IDE0044.severity = error # Make fields readonly when possible
+dotnet_diagnostic.IDE0060.severity = error # Remove unused parameters in method signatures
+dotnet_diagnostic.IDE0051.severity = error # Remove unused private members
+dotnet_diagnostic.IDE0052.severity = error # Remove unread private members
+dotnet_diagnostic.IDE0063.severity = error # Use 'using' statement instead of 'using' block when applicable
+dotnet_diagnostic.IDE0090.severity = error # Use 'new()' instead of explicit type when applicable
+dotnet_diagnostic.IDE0079.severity = error # Remove unnecessary suppression pragmas
+
+# Best Practices
+dotnet_diagnostic.CA1303.severity = warning # Do not pass literals as localized parameters
+dotnet_diagnostic.CA1822.severity = warning # Mark methods as static when possible
+dotnet_diagnostic.CA1507.severity = warning # Use nameof instead of hardcoded string literals
+dotnet_diagnostic.CA1508.severity = warning # Avoid redundant conditionals
+dotnet_diagnostic.CA2208.severity = warning # Instantiate exceptions with meaningful argument names
+dotnet_diagnostic.CA2000.severity = warning # Dispose objects before losing scope
+dotnet_diagnostic.CA2213.severity = warning # Disposable fields should be disposed
+dotnet_diagnostic.CA2235.severity = warning # Mark serializable fields properly
+
+# Performance Optimizations
+dotnet_diagnostic.CA1823.severity = warning # Avoid unused private fields
+dotnet_diagnostic.CA1835.severity = warning # Prefer 'Memory<T>' over 'Span<T>' when possible
+dotnet_diagnostic.CA1836.severity = warning # Prefer 'IsEmpty' over 'Count == 0'
+dotnet_diagnostic.CA1837.severity = warning # Prefer 'StartsWith' over 'Substring().Equals()'
+dotnet_diagnostic.CA1838.severity = warning # Avoid unneeded allocations in loops
+
+# Threading Best Practices
+dotnet_diagnostic.CA2012.severity = warning # Use ValueTask instead of Task when applicable
+dotnet_diagnostic.CA1416.severity = warning # Platform compatibility checks required
+
+# Naming conventions
+dotnet_naming_rule.pascal_case_for_classes.severity = error
+dotnet_naming_rule.pascal_case_for_methods.severity = error
+dotnet_naming_rule.camel_case_for_variables.severity = error
+dotnet_naming_rule.interface_should_be_begins_with_i.severity = error
+dotnet_naming_rule.private_or_internal_field_should_be_camel_case.severity = error
+dotnet_naming_rule.constant_should_be_pascal_case.severity = error
+dotnet_naming_rule.no_underscore_in_member_names.severity = error
+
+# Indentation and spacing
+indent_size = 4
+indent_style = space
+tab_width = 4
+
+# Organize usings
+dotnet_separate_import_directive_groups = false
+dotnet_sort_system_directives_first = true
+
+# Language keywords vs BCL types preferences
+dotnet_style_predefined_type_for_locals_parameters_members = true
+dotnet_style_predefined_type_for_member_access = true
+dotnet_style_object_initializer = true
+dotnet_style_collection_initializer = true
+dotnet_style_expression_bodied_methods = true
+dotnet_style_expression_bodied_properties = true

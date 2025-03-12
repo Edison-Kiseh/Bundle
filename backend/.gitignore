@@ -1,0 +1,33 @@
+# Build files and directories
+bin/
+obj/
+
+# User configuration files
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# Log files
+*.log
+
+# Deployment files
+.publish/
+
+# Local dependency files
+.vscode/
+.idea/
+*.swp
+.vs/
+
+# Secret configuration files
+secrets.json
+ASH/appsettings.Development.json
+
+# Development certificate files
+*.pfx
+*.p12
+
+# IDE configuration files
+.vscode/
+.idea/

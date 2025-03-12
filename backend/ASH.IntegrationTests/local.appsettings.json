@@ -1,0 +1,7 @@
+{
+  "CommunicationServices": {
+    "ResourceConnectionString": "endpoint=https://test.endpoint.test;accesskey=6eXqdjzL9hO5vEo7fDT9mHORDOlR1wHSOZ1ZFXqjYBF2HaoQQ7EdJQQJ99BBACULyCpixmu8AAAAAZCSkmz4",
+    "EndpointUrl": "https://test-endpoint.test",
+    "AdminUserId": "1"
+  }
+}
